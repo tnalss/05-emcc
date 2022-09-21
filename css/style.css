@@ -1,7 +1,7 @@
 @charset "UTF-8";
 :root{
 	--base-text-color:#666;
-
+	--title-color:#1e598c;
 }
 
 *{
@@ -31,11 +31,12 @@ html {
 .d-none{
 	display:none;
 }
-h3 .title{
+h3.title{
 	font-size:1.5rem;
 	font-weight: 500;
-	color:#1e598c;
-	border-bottom: 1px solid #1e598c;
+	color: var(--title-color);
+	border-bottom: 1px solid var(--title-color);
+	text-align:center;
 }
 .container{
 	max-width: 1000px;
@@ -50,6 +51,11 @@ h3 .title{
 button{
 	background-color: transparent;
 	border:0;
+}
+.top-nav{
+	display:flex;
+	column-gap: 38.35rem;
+	align-items: baseline;
 }
 
 
@@ -72,7 +78,7 @@ body{
 }
 
 .burger{
-	right:0;
+	left:1200px;
 	top:1rem;
 	
 }
