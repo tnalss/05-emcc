@@ -1,22 +1,60 @@
 @charset "UTF-8";
 :root{
 	--base-text-color:#666;
+
 }
+
 *{
 	margin:0;
 	padding:0;
 }
+/**************public******************/
 a{
 	color:inherit;
 	text-decoration: none;
 }
+
 html {
 	font-size:20px;
+	box-sizing: border-box;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.d-none{
+	display:none;
+}
+h3 .title{
+	font-size:1.5rem;
+	font-weight: 500;
+	color:#1e598c;
+	border-bottom: 1px solid #1e598c;
+}
+
+/*****************header*******************/
+header{
+	background-image: url("../images/visual_bg.jpg");
+	background-repeat: no-repeat;
+	height: 950px;
+	/* background-attachment : scroll, fixed */
+}
 body{
 	font-family : "Maven Pro", "Noto Sans KR", sans-serif;
 	font-size: .8rem;
 	font-weight:400;
 	color: var(--base-text-color);
+	text-align:center;
+}
+.container{
+	max-width: 1000px;
+	margin:0 auto;
+}
+.burger{
+	background-color: transparent;
 }
