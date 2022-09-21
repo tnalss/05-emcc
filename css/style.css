@@ -16,6 +16,7 @@ a{
 
 html {
 	font-size:20px;
+	scroll-behavior:smooth;
 	box-sizing: border-box;
 }
 
@@ -36,12 +37,30 @@ h3 .title{
 	color:#1e598c;
 	border-bottom: 1px solid #1e598c;
 }
+.container{
+	max-width: 1000px;
+	margin:0 auto;
+}
+.pos-relative{
+	position: relative;
+}
+.pos-absolute{
+	position: absolute;
+}
+button{
+	background-color: transparent;
+	border:0;
+}
+
 
 /*****************header*******************/
 header{
 	background-image: url("../images/visual_bg.jpg");
 	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
 	height: 950px;
+	overflow:hidden;
 	/* background-attachment : scroll, fixed */
 }
 body{
@@ -49,12 +68,17 @@ body{
 	font-size: .8rem;
 	font-weight:400;
 	color: var(--base-text-color);
-	text-align:center;
+	
 }
-.container{
-	max-width: 1000px;
-	margin:0 auto;
-}
+
 .burger{
-	background-color: transparent;
+	right:0;
+	top:1rem;
+	
+}
+.logo{
+	margin: 2rem 0 0 0;
+}
+.slogan{
+	text-align:center;
 }
