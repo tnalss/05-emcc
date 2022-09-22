@@ -1,7 +1,8 @@
 @charset "UTF-8";
 :root{
 	--base-text-color:#666;
-	--title-color:#1e598c;
+	--base-text-light:#fff;
+	--primary-color:#1e598c;
 }
 
 *{
@@ -34,13 +35,16 @@ html {
 h3.title{
 	font-size:1.5rem;
 	font-weight: 500;
-	color: var(--title-color);
-	border-bottom: 1px solid var(--title-color);
+	color: var(--primary-color);
+	border-bottom: 1px solid var(--primary-color);
 	text-align:center;
+	margin: 5rem 0 0 0;
+	padding: 0 0 1rem 0;
 }
 .container{
 	max-width: 1000px;
 	margin:0 auto;
+	overflow: hidden;
 }
 .pos-relative{
 	position: relative;
@@ -56,6 +60,9 @@ button{
 	display:flex;
 	column-gap: 38.35rem;
 	align-items: baseline;
+}
+.mt-100{
+	margin-top: 5rem;
 }
 
 
@@ -77,14 +84,36 @@ body{
 	
 }
 
-.burger{
-	left:1200px;
-	top:1rem;
-	
-}
+
 .logo{
 	margin: 2rem 0 0 0;
 }
 .slogan{
 	text-align:center;
+	margin-top: 11.9rem;
+}
+
+
+.sub-title{
+	font-weight: 500;
+	color: var(--base-text-light);
+	background-color: var(--primary-color);
+	padding: .5rem 0;
+	text-align:center;
+	width: 15rem;
+	margin:0 auto 1rem auto;
+}
+
+/***********************article*******************/
+.system-bg{
+	background-image: url(../images/system_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: 50% 50%;
+	background-size: cover;
+	
+	height:705px; 
+}
+.system-list{
+	display:flex;
+
 }
