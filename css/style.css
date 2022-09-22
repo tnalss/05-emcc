@@ -3,6 +3,7 @@
 	--base-text-color:#666;
 	--base-text-light:#fff;
 	--primary-color:#1e598c;
+	--base-text-color:#000;
 }
 
 *{
@@ -27,7 +28,6 @@ html {
   'wght' 400,
   'GRAD' 0,
   'opsz' 48;
- 
 }
 
 .d-none{
@@ -81,7 +81,6 @@ body{
 	font-size: .8rem;
 	font-weight:400;
 	color: var(--base-text-color);
-	
 }
 
 
@@ -110,8 +109,6 @@ body{
 	background-repeat: repeat-x;
 	background-position: 50% 50%;
 	background-size: cover;
-	
-
 }
 .system-list{
 	display:flex;
@@ -145,4 +142,31 @@ body{
 }
 .over-title+ .material-symbols-outlined{
 	font-size:2rem;
+}
+/*************second article****************/
+.sub-dec{
+	margin: 1rem auto;
+	font-size:1.8rem;
+	font-weight:700;
+	text-align:center;
+}
+.sub-dec strong{
+	color:#ed480e;
+}
+.new-item{
+
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.new-item img:nth-of-type(1){
+	width:30rem;
+	object-fit : cover;
+}
+.new-item button:nth-of-type(1){
+	border: 1px solid var(--base-text-color,tomato);
+	border-radius: 1.5rem;
+	padding: .5rem 1rem;
+	font-size: .8rem;
+	color:var(--base-text-color,tomato);
 }
