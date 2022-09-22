@@ -156,7 +156,7 @@ body{
 	color:#ed480e;
 }
 .new-item{
-
+	margin-top:2rem;
 	display:flex;
 	flex-direction: column;
 	align-items: center;
@@ -173,7 +173,23 @@ body{
 	color:var(--base-text-color,tomato);
 	margin:1rem auto;
 }
-
+.item-detail{
+	
+	width: 100%;
+	height: 100%;
+	background-color: tomato;
+	top:0;
+	left:0;
+	overflow:hidden;
+}
+#close{
+	right:5%;
+	top:5%;
+	background-color: #000;
+	color:white;
+	padding: .5rem;
+	
+}
 
 
 /*******************aside********************/

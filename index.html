@@ -74,12 +74,42 @@
 			<div class="container mt-100">
 				<h3 class="title">생산제품</h3>
 				<p class="sub-title">manufactured product</p>
-				<p class="sub-dec">
-					2023년 신제품 지능형 <strong>텔레모스</strong> 시스템!
-				</p>
-				<div class="new-item">
+
+				<div class="new-item pos-relative">
+					<p class="sub-dec">
+						2023년 신제품 지능형 <strong>텔레모스</strong> 시스템!
+					</p>
 					<img src="images/product.png" alt="2023신제품" />
-					<button type="button" class="rounded-rect">자세히 보기</button>
+					<button type="button" class="rounded-rect" id="detail">자세히
+						보기</button>
+					<div class="item-detail pos-absolute d-none">
+						<span class="material-symbols-outlined pos-absolute" id="close">
+							close </span>
+						<div class="detail-content">
+							<div class="img-detail">
+								<div class="big-img">
+									<img src="https://picsum.photos/id/2/300/300" alt="" />
+								</div>
+								<ul class="small-img">
+									<li><img src="https://picsum.photos/id/2/100/100" alt="" />
+									</li>
+									<li><img src="https://picsum.photos/id/20/100/100" alt="" />
+									</li>
+									<li><img src="https://picsum.photos/id/30/100/100" alt="" />
+									</li>
+								</ul>
+
+							</div>
+							<div class="text-detail">
+								<ul>
+									<li>제품명 : 지능형 텔레모스 시스템</li>
+									<li>출시일 : 2022.9.22</li>
+									<li>상세스펙 : 맞춤형 수질관리 시스템</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
 				</div>
 				<!--new item  -->
 				<!-- <div class="carousel">
@@ -118,22 +148,23 @@
 			<h3 class="catch-title">(주)이미그룹</h3>
 
 			<p class="catch-desc">
-				<span class="w500">사람과 자연 모두가 행복한 세상,</span><br><span class="w300">이미가 만들어 가고자 하는 미래입니다.</span>
+				<span class="w500">사람과 자연 모두가 행복한 세상,</span><br> <span
+					class="w300">이미가 만들어 가고자 하는 미래입니다.</span>
 			</p>
 
 		</div>
 	</aside>
-			<div class="extras">
-				<div class="container">
-					<div class="contact">
-						<a href="tel:+820626700300">062) 670-0300</a>
-					</div>
-					<div class="top">
-						<a href="#top"> <img src="images/btn_top.gif" alt="go_top" />
-						</a>
-					</div>
-				</div>
+	<div class="extras">
+		<div class="container">
+			<div class="contact">
+				<a href="tel:+820626700300">062) 670-0300</a>
 			</div>
+			<div class="top">
+				<a href="#top"> <img src="images/btn_top.gif" alt="go_top" />
+				</a>
+			</div>
+		</div>
+	</div>
 
 	<footer>
 
@@ -156,6 +187,6 @@
 		</div>
 
 	</footer>
-	<script src="script.main.js"></script>
+	<script src="script/main.js"></script>
 </body>
 </html>
