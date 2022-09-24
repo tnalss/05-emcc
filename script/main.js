@@ -31,12 +31,15 @@ window.addEventListener("DOMContentLoaded", function() {
 	
 	smallImg[0].addEventListener("click",function(){
 		img1.setAttribute("src","images/items1.png");
+		img1.classList.add('wd');
 	})
 	smallImg[1].addEventListener("click",function(){
 		img1.setAttribute("src","images/items2.png");
+		img1.classList.add('wd');
 	})
 	smallImg[2].addEventListener("click",function(){
 		img1.setAttribute("src","images/items3.png");
+		img1.classList.add('wd');
 	})
 	
 
