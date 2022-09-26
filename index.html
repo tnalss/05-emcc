@@ -23,7 +23,7 @@
 </head>
 <body>
 	<h1 class="d-none">EMCC 이미그룹</h1>
-
+<div id="screen" class="d-none"></div>
 	<header class="main-header">
 		<div class="container">
 			<div class="top-nav">
@@ -33,7 +33,7 @@
 
 				</div>
 				<button type="button" class="burger">
-					<img src="images/btn_menu.png" alt="burger menu" />
+					<img class="burger-img" src="images/btn_menu.png" alt="burger menu" />
 				</button>
 			</div>
 			<div class="slogan">
@@ -82,22 +82,19 @@
 					<img src="images/product.png" alt="2023신제품" />
 					<button type="button" class="rounded-rect" id="detail">자세히
 						보기</button>
-						
+
 					<div class="item-detail pos-absolute d-none">
 						<span class="material-symbols-outlined pos-absolute" id="close">
 							close </span>
 						<div class="detail-content">
 							<div class="img-detail">
 								<div class="big-img">
-									<img src="images/product.png"  id="img1" alt="new system" />
+									<img src="images/product.png" id="img1" alt="new system" />
 								</div>
 								<ul class="small-img">
-									<li><img src="images/items1.png" alt="1" />
-									</li>
-									<li><img src="images/items2.png" alt="2" />
-									</li>
-									<li><img src="images/items3.png" alt="3" />
-									</li>
+									<li><img src="images/items1.png" alt="1" /></li>
+									<li><img src="images/items2.png" alt="2" /></li>
+									<li><img src="images/items3.png" alt="3" /></li>
 								</ul>
 
 							</div>
@@ -171,32 +168,29 @@
 		</div>
 	</div>
 
-	<div id="sidePane" class="collapse pos-fixed d-none">
-	<header class="side-header">
-	<h2>EMCC로고</h2>
-	<p>(주)이미그룹</p>
-	<nav class="sid-nav">
-	
-	<ul id="snb">
-	<li><a href="#">home</a></li>
-	<li><a href="#">product</a></li>
-	<li><a href="#">customer</a></li>
-	<li><a href="#">contact</a></li>
-	<li><a href="#">about</a></li>
-	
-	</ul>
-	</nav>
-	
-	
-	</header>
-	<section>
-	
-	</section>
-	
-	<footer>
-	&copy; emcc. 2022.<br>
-	<a href="mailto:hanul21321321@naver.com">hanul</a>
-	</footer>
+	<div id="sidePanel" class="d-none pos-absolute">
+		<header class="side-header">
+			<h2>EMCC로고</h2>
+			<p>(주)이미그룹</p>
+			<nav class="sid-nav">
+
+				<ul id="snb">
+					<li><a href="#">home</a></li>
+					<li><a href="#">product</a></li>
+					<li><a href="#">customer</a></li>
+					<li><a href="#">contact</a></li>
+					<li><a href="#">about</a></li>
+
+				</ul>
+			</nav>
+
+		</header>
+		<aside>
+			<!-- <button id="closePanel">&lt;</button> -->
+		</aside>
+		<footer>
+			&copy; emcc. 2022.<br> <a href="mailto:hanul21321321@naver.com">hanul</a>
+		</footer>
 	</div>
 
 

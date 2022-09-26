@@ -41,8 +41,26 @@ window.addEventListener("DOMContentLoaded", function() {
 		img1.setAttribute("src","images/items3.png");
 		img1.classList.add('wd');
 	})
+	const BURGER = document.querySelector(".burger");
+	const bg_img = document.querySelector(".burger-img");
+	const SCREEN = document.querySelector("#screen");
+
 	
+	BURGER.addEventListener("click", function(){
+		const menu= document.querySelector("#sidePanel");
 
-
+		if(menu.classList.contains("d-none")){
+		menu.classList.remove('d-none');
+		bg_img.setAttribute("src","images/x_button.png");
+		SCREEN.classList.remove('d-none');
+		}
+		else{
+		menu.classList.add('d-none');
+		bg_img.setAttribute("src","images/btn_menu.png");
+		SCREEN.classList.add('d-none');
+		}
+	})
+	
+	
 
 })
